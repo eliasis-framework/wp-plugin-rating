@@ -1,0 +1,37 @@
+/**
+ * Eliasis module for WordPress plugins · WP Plugin Rating
+ * 
+ * @author     Josantonius - hello@josantonius.com
+ * @copyright  Copyright (c) 2017
+ * @license    GPL-2.0+
+ * @link       https://github.com/Josantonius/WP_Plugin-Rating.git
+ * @since      1.0.0
+ */
+#jst-stars {
+  right: 0;
+  margin-right: 50px;
+  position: absolute;
+  margin-top: 26px;
+  width: 113px;
+  cursor: pointer; }
+
+#plugin-rating {
+  text-decoration: none; }
+  #plugin-rating [class*=dashicons-star-] {
+    color: #ffb900; }
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl; }
+  .rating > span {
+    width: 14px;
+    padding: 0px 2px 0px 2px; }
+    .rating > span:hover:before, .rating > span:hover ~ span:before {
+      cursor: pointer;
+      content: ""; }
+
+@media (max-width: 504px) {
+  #jst-stars {
+    right: 0;
+    position: relative;
+    margin-top: 10px; } }
