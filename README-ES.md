@@ -61,4 +61,4 @@ Este proyecto está licenciado bajo **licencia GPL-2.0+**. Consulta el archivo [
 
 Si te ha resultado útil, házmelo saber :wink:
 
-Puedes contactarme en [Twitter](https://twitter.com/Josantonius) o a través de mi [correo electrónico](mailto:hello@josantonius.com).
+Puedes contactarme en [Twitter](https://twitter.com/Josantonius) o a través de mi [correo electrónico](mailto:hello@josantonius.com). 
