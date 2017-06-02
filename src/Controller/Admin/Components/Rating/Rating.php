@@ -16,7 +16,7 @@ use Eliasis\Module\Module,
     Eliasis\Controller\Controller;
     
 /**
- * Image controller
+ * Rating controller
  *
  * @since 1.0.0
  */
