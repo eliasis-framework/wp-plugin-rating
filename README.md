@@ -10,6 +10,27 @@ Show plugin rating in WordPress administration pages for plugins developed with 
 
 - [Installation](#installation)
 - [Requirements](#requirements)
+- [Usage](#usage)### Usage
+
+Example of use for this library:
+
+```php
+<?php
+require __DIR__ . '/vendor/autoload.php';
+
+use Josantonius\LoadTime\LoadTime;
+
+LoadTime::start();
+
+for ($i=0; $i < 100000; $i++) { 
+    // print_r($i . ' ');
+}
+
+print_r('Script executed in: ' . LoadTime::end() . ' seconds.'); 
+
+/* Script executed in: 0.0012 seconds. */
+```
+
 - [Images](#images)
 - [Contribute](#contribute)
 - [Licensing](#licensing)
@@ -34,6 +55,17 @@ Or you can also clone the complete repository with Git:
 ### Requirements
 
 This pluggin is supported by PHP versions 5.3 or higher and is compatible with HHVM versions 3.0 or higher.
+
+### Usage
+
+Run the following action where you want to show the rating:
+
+```php
+<?php
+use Josantonius\Hook\Hook;
+
+Hook::doAction('wp-plugin-rating', 'wp-plugin-slug');
+```
 
 ### Images
 

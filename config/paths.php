@@ -23,7 +23,5 @@ return [
     'path' => [
 
         'components' => $ROOT.'src'.$DS.'template'.$DS.'components'.$DS,
-        'data'       => $ROOT.'src'.$DS.'data'    .$DS.'ratings'   .$DS,
-        'languages'  => $ROOT.'languages'.$DS,
     ],
 ];

@@ -12,6 +12,7 @@ Mostrar la calificación del plugin en las páginas de administración de WordPr
 
 - [Instalación](#instalación)
 - [Requisitos](#requisitos)
+- [Uso](#uso)
 - [Imágenes](#imagenes)
 - [Contribuir](#contribuir)
 - [Licencia](#licencia)
@@ -36,6 +37,17 @@ También puedes clonar el repositorio completo con Git:
 ### Requisitos
 
 Este plugin es soportado por versiones de PHP 5.3 o superiores y es compatible con versiones de HHVM 3.0 o superiores.
+
+### Uso
+
+Ejecuta la siguiente acción donde quieras mostrar la clalificación:
+
+```php
+<?php
+use Josantonius\Hook\Hook;
+
+Hook::doAction('wp-plugin-rating', 'wp-plugin-slug');
+```
 
 ### Imágenes
 
