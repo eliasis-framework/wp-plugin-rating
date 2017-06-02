@@ -10,27 +10,7 @@ Show plugin rating in WordPress administration pages for plugins developed with 
 
 - [Installation](#installation)
 - [Requirements](#requirements)
-- [Usage](#usage)### Usage
-
-Example of use for this library:
-
-```php
-<?php
-require __DIR__ . '/vendor/autoload.php';
-
-use Josantonius\LoadTime\LoadTime;
-
-LoadTime::start();
-
-for ($i=0; $i < 100000; $i++) { 
-    // print_r($i . ' ');
-}
-
-print_r('Script executed in: ' . LoadTime::end() . ' seconds.'); 
-
-/* Script executed in: 0.0012 seconds. */
-```
-
+- [Usage](#usage)
 - [Images](#images)
 - [Contribute](#contribute)
 - [Licensing](#licensing)
@@ -50,7 +30,7 @@ The previous command will only install the necessary files, if you prefer to dow
 
 Or you can also clone the complete repository with Git:
 
-	$ git clone https://github.com/Josantonius/Josantonius/WP_Plugin-Rating.git
+	$ git clone https://github.com/Josantonius/WP_Plugin-Rating.git
 
 ### Requirements
 

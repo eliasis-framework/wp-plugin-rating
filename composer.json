@@ -1,5 +1,5 @@
 {
-    "name":        "josantonius/wp-plugin-rating",
+    "name":        "josantonius/wp_plugin-rating",
     "version":     "1.0.0",
     "description": "Show plugin rating in WordPress administration pages for plugins developed with Eliasis Framework.",
     "type": "eliasis-module",
@@ -27,9 +27,9 @@
     },
     "minimum-stability": "dev",
     "support": {
-        "issues": "https://github.com/Josantonius/wp-plugin-rating/issues",
-        "forum": "http://stackoverflow.com/tags/wp-plugin-rating",
-        "source": "https://github.com/Josantonius/wp-plugin-rating"
+        "issues": "https://github.com/Josantonius/wp_plugin-rating/issues",
+        "forum": "http://stackoverflow.com/tags/wp_plugin-rating",
+        "source": "https://github.com/Josantonius/wp_plugin-rating"
     },
     "require": {
         "php": "^5.3 || ^7.0",
