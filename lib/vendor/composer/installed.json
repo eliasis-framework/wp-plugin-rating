@@ -175,19 +175,19 @@
         "source": {
             "type": "git",
             "url": "https://github.com/Eliasis-Framework/Eliasis.git",
-            "reference": "5293df06cc9863cc7cb8cb4c60be63ed95a5cd40"
+            "reference": "16365251cee28208a69c452b672e87b08e8e3646"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Eliasis-Framework/Eliasis/zipball/5293df06cc9863cc7cb8cb4c60be63ed95a5cd40",
-            "reference": "5293df06cc9863cc7cb8cb4c60be63ed95a5cd40",
+            "url": "https://api.github.com/repos/Eliasis-Framework/Eliasis/zipball/16365251cee28208a69c452b672e87b08e8e3646",
+            "reference": "16365251cee28208a69c452b672e87b08e8e3646",
             "shasum": ""
         },
         "require": {
-            "josantonius/url": "^1.1.1",
+            "josantonius/url": "^1.1.2",
             "php": "^5.6 || ^7.0"
         },
-        "time": "2017-05-31 08:55:23",
+        "time": "2017-06-12 12:13:41",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -283,18 +283,18 @@
         "source": {
             "type": "git",
             "url": "https://github.com/Josantonius/PHP-Hook.git",
-            "reference": "dd02afb5aa319d6eb0145cce3c275db854dd1525"
+            "reference": "1bccac139199d33f0c330596abf6b17abca3be0f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Josantonius/PHP-Hook/zipball/dd02afb5aa319d6eb0145cce3c275db854dd1525",
-            "reference": "dd02afb5aa319d6eb0145cce3c275db854dd1525",
+            "url": "https://api.github.com/repos/Josantonius/PHP-Hook/zipball/1bccac139199d33f0c330596abf6b17abca3be0f",
+            "reference": "1bccac139199d33f0c330596abf6b17abca3be0f",
             "shasum": ""
         },
         "require": {
             "php": "^5.6 || ^7.0"
         },
-        "time": "2017-05-31 11:31:47",
+        "time": "2017-06-02 02:16:38",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -326,6 +326,58 @@
             "actions",
             "hhvm",
             "php"
+        ]
+    },
+    {
+        "name": "josantonius/wp_plugin-info",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Josantonius/WP_Plugin-Info.git",
+            "reference": "6a44762ee24da75373400dc4c97ccae6f76b8afd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Josantonius/WP_Plugin-Info/zipball/6a44762ee24da75373400dc4c97ccae6f76b8afd",
+            "reference": "6a44762ee24da75373400dc4c97ccae6f76b8afd",
+            "shasum": ""
+        },
+        "require": {
+            "composer/installers": "^1.3.0",
+            "eliasis-framework/eliasis": "^1.0.9",
+            "php": "^5.3 || ^7.0"
+        },
+        "time": "2017-06-12 22:13:40",
+        "type": "eliasis-module",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Eliasis\\Modules\\WP_Plugin_Info\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Josantonius",
+                "email": "hello@josantonius.com",
+                "homepage": "https://josantonius.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "Get and save plugin information from WordPress API to be consumed by other modules.",
+        "keywords": [
+            "Eliasis",
+            "WordPress-API",
+            "component",
+            "hhvm",
+            "info",
+            "php",
+            "plugin",
+            "wordpress"
         ]
     }
 ]

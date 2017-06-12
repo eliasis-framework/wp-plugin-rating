@@ -15,15 +15,13 @@ class ComposerStaticInit3f08422fd9359be7882784a3c9afd876
         ),
         'E' => 
         array (
+            'Eliasis\\Modules\\WP_Plugin_Rating\\' => 33,
+            'Eliasis\\Modules\\WP_Plugin_Info\\' => 31,
             'Eliasis\\' => 8,
         ),
         'C' => 
         array (
             'Composer\\Installers\\' => 20,
-        ),
-        'A' => 
-        array (
-            'App\\Modules\\WP_Plugin_Rating\\' => 29,
         ),
     );
 
@@ -40,6 +38,14 @@ class ComposerStaticInit3f08422fd9359be7882784a3c9afd876
         array (
             0 => __DIR__ . '/..' . '/josantonius/hook/src',
         ),
+        'Eliasis\\Modules\\WP_Plugin_Rating\\' => 
+        array (
+            0 => __DIR__ . '/../../..' . '/src',
+        ),
+        'Eliasis\\Modules\\WP_Plugin_Info\\' => 
+        array (
+            0 => __DIR__ . '/../../..' . '/modules/wp_plugin-info/src',
+        ),
         'Eliasis\\' => 
         array (
             0 => __DIR__ . '/..' . '/eliasis-framework/eliasis/src',
@@ -47,10 +53,6 @@ class ComposerStaticInit3f08422fd9359be7882784a3c9afd876
         'Composer\\Installers\\' => 
         array (
             0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
-        ),
-        'App\\Modules\\WP_Plugin_Rating\\' => 
-        array (
-            0 => __DIR__ . '/../../..' . '/src',
         ),
     );
 

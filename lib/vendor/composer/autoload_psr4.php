@@ -9,7 +9,8 @@ return array(
     'Josantonius\\WP_Register\\' => array($vendorDir . '/josantonius/wp_register/src'),
     'Josantonius\\Url\\' => array($vendorDir . '/josantonius/url/src'),
     'Josantonius\\Hook\\' => array($vendorDir . '/josantonius/hook/src'),
+    'Eliasis\\Modules\\WP_Plugin_Rating\\' => array($baseDir . '/src'),
+    'Eliasis\\Modules\\WP_Plugin_Info\\' => array($baseDir . '/modules/wp_plugin-info/src'),
     'Eliasis\\' => array($vendorDir . '/eliasis-framework/eliasis/src'),
     'Composer\\Installers\\' => array($vendorDir . '/composer/installers/src/Composer/Installers'),
-    'App\\Modules\\WP_Plugin_Rating\\' => array($baseDir . '/src'),
 );

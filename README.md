@@ -44,7 +44,7 @@ Run the following action where you want to show the rating:
 <?php
 use Josantonius\Hook\Hook;
 
-Hook::doAction('wp-plugin-rating', 'wp-plugin-slug');
+Hook::doAction('get-wp-plugin-rating', 'wp-plugin-slug');
 ```
 
 ### Images

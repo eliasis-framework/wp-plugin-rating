@@ -1,6 +1,6 @@
 <?php
 /**
- * Eliasis module for WordPress plugins · WP Plugin Rating
+ * WP Plugin Rating · Eliasis module for WordPress plugins
  * 
  * @author     Josantonius - hello@josantonius.com
  * @copyright  Copyright (c) 2017
@@ -11,7 +11,7 @@
 
 use Eliasis\Module\Module;
 
-$css = Module::WP_Plugin_Rating('url')['css'];
+$css = Module::WP_Plugin_Rating()->get('url', 'css');
 
 return [
 

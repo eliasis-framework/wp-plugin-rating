@@ -1,6 +1,6 @@
 <?php
 /**
- * Eliasis module for WordPress plugins · WP Plugin Rating
+ * WP Plugin Rating · Eliasis module for WordPress plugins
  * 
  * @author     Josantonius - hello@josantonius.com
  * @copyright  Copyright (c) 2017
@@ -12,7 +12,7 @@
 use Eliasis\App\App,
     Eliasis\Module\Module;
 
-$url = App::MODULES_URL() . Module::WP_Plugin_Rating('folder');
+$url = App::MODULES_URL() . Module::WP_Plugin_Rating()->get('folder');
 
 return [
 

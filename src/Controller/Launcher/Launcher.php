@@ -1,6 +1,6 @@
 <?php
 /**
- * Eliasis module for WordPress plugins · WP Plugin Rating
+ * WP Plugin Rating · Eliasis module for WordPress plugins
  * 
  * @author     Josantonius - hello@josantonius.com
  * @copyright  Copyright (c) 2017
@@ -9,7 +9,7 @@
  * @since      1.0.0
  */
 
-namespace App\Modules\WP_Plugin_Rating\Controller\Launcher;
+namespace Eliasis\Modules\WP_Plugin_Rating\Controller\Launcher;
 
 use Josantonius\WP_Register\WP_Register,
     Josantonius\Hook\Hook,
@@ -33,7 +33,7 @@ class Launcher extends Controller {
      */
     public function init() {
 
-        if (Module::WP_Plugin_Rating('state') === 'active') {
+        if (Module::WP_Plugin_Rating()->get('state') === 'active') {
 
             if (is_admin()) {
 
@@ -75,9 +75,13 @@ class Launcher extends Controller {
 
             add_action($hook, function() {
 
+                $this->setLanguages();
+                
+                $Rating = Module::WP_Plugin_Rating()->instance('Rating');
+
                 Hook::addAction(
-                    'wp-plugin-rating', 
-                    [$this->getRatingClass(), 'getPluginRating'], 
+                    'get-wp-plugin-rating', 
+                    [$Rating, 'getPluginRating'], 
                     8, 
                     1
                 );
@@ -87,19 +91,21 @@ class Launcher extends Controller {
         }
     }
 
+
     /**
-     * Get Rating class namespace.
+     * Set plugin textdomain.
      * 
      * @since 1.0.0
-     *
-     * @return string → full class name
      */
-    public function getRatingClass() {
+    public function setLanguages() {
 
-        $namespace = Module::WP_Plugin_Rating('namespaces')['components'];
+        $slug = 'eliasis-' . Module::WP_Plugin_Rating()->get('slug');
 
-        return $namespace . 'Rating\\Rating';
+        $path = Module::WP_Plugin_Rating()->get('path', 'languages');
+
+        load_plugin_textdomain($slug, false, $path);
     }
+
 
     /**
      * Load styles.
@@ -108,8 +114,8 @@ class Launcher extends Controller {
      */
     public function addStyles() {
 
-        $css = Module::WP_Plugin_Rating('assets', 'css', 'WP_Plugin_Rating');
+        $css = Module::WP_Plugin_Rating()->get('assets', 'css');
 
-        WP_Register::add('style', $css);
+        WP_Register::add('style', $css['WP_Plugin_Rating']);
     }
 }

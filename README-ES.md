@@ -6,8 +6,6 @@
 
 Mostrar la calificación del plugin en las páginas de administración de WordPress para plugins desarrollados con Eliasis Framework.
 
-![image](resources/banner-1544x500.png)
-
 ---
 
 - [Instalación](#instalación)
@@ -46,7 +44,7 @@ Ejecuta la siguiente acción donde quieras mostrar la clalificación:
 <?php
 use Josantonius\Hook\Hook;
 
-Hook::doAction('wp-plugin-rating', 'wp-plugin-slug');
+Hook::doAction('get-wp-plugin-rating', 'wp-plugin-slug');
 ```
 
 ### Imágenes

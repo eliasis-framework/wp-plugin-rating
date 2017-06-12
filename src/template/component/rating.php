@@ -1,6 +1,6 @@
 <?php
 /**
- * Eliasis module for WordPress plugins · WP Plugin Rating
+ * WP Plugin Rating · Eliasis module for WordPress plugins
  * 
  * @author     Josantonius - hello@josantonius.com
  * @copyright  Copyright (c) 2017
@@ -13,14 +13,16 @@ use Eliasis\App\App,
     Eliasis\View\View,
     Eliasis\Module\Module;
 
-$slug = trim(Module::WP_Plugin_Rating('folder'), App::DS);
+$slug = trim(Module::WP_Plugin_Rating()->get('folder'), App::DS);
+
+$data = View::get();
 ?>
 
 <div id="jst-stars">
-   <a id="plugin-rating" href="<?= View::$data['plugin-url-review'] ?>/" title="<?= __('Rate plugin', 'eliasis-wp-plugin-rating') ?>" target="_blank">
+   <a id="plugin-rating" href="<?= $data['plugin-url-review'] ?>/" title="<?= __('Rate plugin', 'eliasis-wp-plugin-rating') ?>" target="_blank">
       <div class="rating">
 
-         <?php foreach (View::$data['stars'] as $star): ?>
+         <?php foreach ($data['stars'] as $star): ?>
 
             <span class="dashicons dashicons-star-<?= $star ?>"></span>
          

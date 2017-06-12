@@ -1,6 +1,6 @@
 <?php
 /**
- * Eliasis module for WordPress plugins · WP Plugin Rating
+ * WP Plugin Rating · Eliasis module for WordPress plugins
  * 
  * @author     Josantonius - hello@josantonius.com
  * @copyright  Copyright (c) 2017
@@ -14,14 +14,13 @@ use Eliasis\App\App,
 
 $DS = App::DS;
 
-$folder = Module::WP_Plugin_Rating('folder');
-
-$ROOT = App::ROOT() . 'modules' . App::DS . $folder;
+$ROOT = Module::WP_Plugin_Rating()->get('path', 'root');
 
 return [
 
     'path' => [
 
-        'components' => $ROOT.'src'.$DS.'template'.$DS.'components'.$DS,
+        'languages' => $ROOT.'languages'.$DS,
+        'component' => $ROOT.'src'.$DS.'template'.$DS.'component'.$DS,
     ],
 ];

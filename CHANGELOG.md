@@ -2,17 +2,17 @@
 
 ## 1.0.0 - 2017-06-02
 
-* Added `App\Modules\WP_Plugin_Rating\Controller\Admin\Components\Rating\Rating` class.
-* Added `App\Modules\WP_Plugin_Rating\Controller\Admin\Components\Rating\Rating->getPluginRating()` method.
-* Added `App\Modules\WP_Plugin_Rating\Controller\Admin\Components\Rating\Rating->prepareStars()` method.
-* Added `App\Modules\WP_Plugin_Rating\Controller\Admin\Components\Rating\Rating->render()` method.
-
 * Added `App\Modules\WP_Plugin_Rating\Controller\Launcher\Launcher` class.
 * Added `App\Modules\WP_Plugin_Rating\Controller\Launcher\Launcher->init()` method.
 * Added `App\Modules\WP_Plugin_Rating\Controller\Launcher\Launcher->admin()` method.
 * Added `App\Modules\WP_Plugin_Rating\Controller\Launcher\Launcher->afterAddMenu()` method.
-* Added `App\Modules\WP_Plugin_Rating\Controller\Launcher\Launcher->getRatingClass()` method.
+* Added `App\Modules\WP_Plugin_Rating\Controller\Launcher\Launcher->setLanguages()` method.
 * Added `App\Modules\WP_Plugin_Rating\Controller\Launcher\Launcher->addStyles()` method.
+
+* Added `App\Modules\WP_Plugin_Rating\Controller\Admin\Components\Rating\Rating` class.
+* Added `App\Modules\WP_Plugin_Rating\Controller\Admin\Components\Rating\Rating->getPluginRating()` method.
+* Added `App\Modules\WP_Plugin_Rating\Controller\Admin\Components\Rating\Rating->prepareStars()` method.
+* Added `App\Modules\WP_Plugin_Rating\Controller\Admin\Components\Rating\Rating->render()` method.
 
 * Added `wp-plugin-rating/config/add-urls.php` file.
 * Added `wp-plugin-rating/config/assets.php` file.

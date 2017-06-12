@@ -1,6 +1,6 @@
 <?php
 /**
- * Eliasis module for WordPress plugins · WP Plugin Rating
+ * WP Plugin Rating · Eliasis module for WordPress plugins
  * 
  * @author     Josantonius - hello@josantonius.com
  * @copyright  Copyright (c) 2017
@@ -9,7 +9,7 @@
  * @since      1.0.0
  */
 
-$namespace = 'App\\Modules\\';
+$namespace = 'Eliasis\\Modules\\';
 
 $module = 'WP_Plugin_Rating\\Controller\\';
 
@@ -18,6 +18,6 @@ return [
     'namespaces' => [
 
         'controller' => $namespace . $module,
-        'components' => $namespace . $module . 'Admin\\Components\\',
+        'component'  => $namespace . $module . 'Admin\\Component\\',
     ],
 ];

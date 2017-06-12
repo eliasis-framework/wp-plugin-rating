@@ -1,6 +1,6 @@
 <?php
 /**
- * Eliasis module for WordPress plugins · WP Plugin Rating
+ * WP Plugin Rating · Eliasis module for WordPress plugins
  * 
  * @author     Josantonius - hello@josantonius.com
  * @copyright  Copyright (c) 2017
@@ -9,7 +9,7 @@
  * @since      1.0.0
  */
 
-namespace App\Modules\WP_Plugin_Rating\Controller\Admin\Components\Rating;
+namespace Eliasis\Modules\WP_Plugin_Rating\Controller\Admin\Component\Rating;
 
 
 use Eliasis\Module\Module,
@@ -33,7 +33,7 @@ class Rating extends Controller {
 
         $rating = 5;
 
-        $pluginsUrl = Module::WP_Plugin_Rating('url', 'wp-plugins');
+        $pluginsUrl = Module::WP_Plugin_Rating()->get('url', 'wp-plugins');
 
         $url = $pluginsUrl . $slug . '/reviews/#new-post';
         
@@ -41,7 +41,10 @@ class Rating extends Controller {
 
         if (Module::exists('WP_Plugin_Info')) {
 
-            //$rating = '';
+            $rating = Module::WP_Plugin_Info()->instance('Info')
+                                              ->get('rating', $slug);
+
+            $rating = ($rating) ? $rating : 5;
         }
 
         $data['stars'] = $this->prepareStars($rating);
@@ -93,8 +96,8 @@ class Rating extends Controller {
      */
     public function render($data) {
 
-        $component = Module::WP_Plugin_Rating('path', 'components');
+        $component = Module::WP_Plugin_Rating()->get('path', 'component');
 
-        $this->view->renderizate($component . 'rating', $data);
+        $this->view->renderizate($component, 'rating', $data);
     }
 }
