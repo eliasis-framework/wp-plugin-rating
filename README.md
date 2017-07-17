@@ -13,8 +13,18 @@ Show plugin rating in WordPress administration pages for plugins developed with 
 - [Usage](#usage)
 - [Images](#images)
 - [Contribute](#contribute)
-- [Licensing](#licensing)
+- [License](#license)
 - [Copyright](#copyright)
+
+---
+
+<p align="center"><strong>Take a look at the code</strong></p>
+
+<p align="center">
+  <a href="" title="Take a look at the code">
+  	<img src="https://raw.githubusercontent.com/Josantonius/PHP-Algorithm/master/resources/youtube-thumbnail.jpg">
+  </a>
+</p>
 
 ---
 
@@ -61,7 +71,7 @@ Hook::doAction('get-wp-plugin-rating', 'wp-plugin-slug');
 
 This is intended for large and long-lived objects.
 
-### Licensing
+### License
 
 This project is licensed under **GPL-2.0+**. See the [LICENSE](LICENSE) file for more info.
 
