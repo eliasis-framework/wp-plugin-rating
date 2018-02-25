@@ -24,8 +24,8 @@ Este componente requiere que la página donde se insertará el gancho de acción
 ---
 
 <div style="margin: 0 auto;">
-![image](resources/screenshot-1.png)
-![image](resources/screenshot-2.png)
+    <img src="resources/screenshot-1.png" alt="">
+    <img src="resources/screenshot-2.png" alt="">
 </div>
 
 ---
