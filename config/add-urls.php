@@ -17,7 +17,7 @@ $url = App::COMPONENTS_URL() . Component::WP_Plugin_Rating()->getOption( 'folder
 
 return [
 	'url' => [
-		'css' => $url . 'public/css/',
+		'css'        => $url . 'public/css/',
 		'wp-plugins' => 'https://wordpress.org/support/plugin/',
 	],
 ];

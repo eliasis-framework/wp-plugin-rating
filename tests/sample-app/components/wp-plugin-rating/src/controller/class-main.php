@@ -47,8 +47,8 @@ class Main extends Controller {
 		$data['plugin-url-review'] = $url;
 
 		if ( Plugin::exists( 'WP_Plugin_Info' ) ) {
-			$info = Plugin::WP_Plugin_Info()->getControllerInstance( 'Main' );
-			$rating = $info->get( 'ratings', $slug );
+			$info    = Plugin::WP_Plugin_Info()->getControllerInstance( 'Main' );
+			$rating  = $info->get( 'ratings', $slug );
 			$ratings = ( $rating ) ? $rating : $ratings;
 		}
 

@@ -10,8 +10,8 @@
  * @since     1.0.0
  */
 
-use Eliasis\Framework\View;
 use Eliasis\Complement\Type\Component;
+use Eliasis\Framework\View;
 
 $slug = trim( Component::WP_Plugin_Rating()->getOption( 'folder' ), '/' );
 
@@ -19,11 +19,11 @@ $data = View::getOption();
 ?>
 
 <div id="jst-stars">
-   <a id="plugin-rating" href="<?php echo esc_url( $data['plugin-url-review'] ); ?>/" title="Rate plugin" target="_blank">
-	  <div class="rating">
+	<a id="plugin-rating" href="<?php echo esc_url( $data['plugin-url-review'] ); ?>/" title="Rate plugin" target="_blank">
+		<div class="rating">
 			<?php foreach ( $data['stars'] as $star ) : ?>
 			<span class="dashicons dashicons-star-<?php echo esc_html( $star ); ?>"></span>
 			<?php endforeach; ?>
-	  </div>
-   </a>
+		</div>
+	</a>
 </div>

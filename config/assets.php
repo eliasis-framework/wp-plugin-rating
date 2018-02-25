@@ -18,12 +18,12 @@ return [
 	'assets' => [
 		'css' => [
 			'WP_Plugin_Rating' => [
-				'name' => 'WP_Plugin_Rating',
-				'url' => $css . 'wp-plugin-rating.css',
-				'place' => 'admin',
-				'deps' => [],
-				'version' => '1.0.0',
-				'media' => '',
+				'name'    => 'WP_Plugin_Rating',
+				'url'     => $css . 'wp-plugin-rating.min.css',
+				'place'   => 'admin',
+				'deps'    => [],
+				'version' => '1.0.1',
+				'media'   => '',
 			],
 		],
 	],

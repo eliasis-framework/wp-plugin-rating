@@ -38,8 +38,8 @@ class Launcher extends Controller {
 	 */
 	protected function admin() {
 		$method = [ $this, 'after_add_menu' ];
-		add_action( 'wp_menu/after_add_menu_page', $method, 10, 1 );
-		add_action( 'wp_menu/after_add_submenu_page', $method, 10, 1 );
+		add_action( 'wp_menu_after_add_menu_page', $method, 10, 1 );
+		add_action( 'wp_menu_after_add_submenu_page', $method, 10, 1 );
 	}
 
 	/**
