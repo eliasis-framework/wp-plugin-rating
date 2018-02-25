@@ -19,10 +19,10 @@ return [
 		'css' => [
 			'WP_Plugin_Rating' => [
 				'name'    => 'WP_Plugin_Rating',
-				'url'     => $css . 'wp-plugin-rating.css',
+				'url'     => $css . 'wp-plugin-rating.min.css',
 				'place'   => 'admin',
 				'deps'    => [],
-				'version' => '1.0.0',
+				'version' => '1.0.1',
 				'media'   => '',
 			],
 		],

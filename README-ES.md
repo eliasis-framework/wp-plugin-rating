@@ -57,7 +57,7 @@ Métodos disponibles en este componente:
 ### - Mostrar calificación del plugin de WordPress:
 
 ```php
-Hook::doAction('get_plugin_rating', $slug);
+Hook::doAction('wp-plugin-rating\display', $slug);
 ```
 
 | Atributo | Descripción | Tipo de dato | Requerido | Por defecto
@@ -79,7 +79,7 @@ use Josantonius\Hook\Hook;
 ### - Mostrar calificación del plugin Search Inside:
 
 ```php
-Hook::doAction('get_plugin_rating', 'search-inside');
+Hook::doAction('wp-plugin-rating\display', 'search-inside');
 ```
 
 ## Tests 

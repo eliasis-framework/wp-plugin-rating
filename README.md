@@ -57,7 +57,7 @@ Available methods in this component:
 ### - Show WordPress plugin rating:
 
 ```php
-Hook::doAction('get_plugin_rating', $slug);
+Hook::doAction('wp-plugin-rating\display', $slug);
 ```
 
 | Atttribute | Description | Type | Required
@@ -79,7 +79,7 @@ use Josantonius\Hook\Hook;
 ### - Show rating of the Search Inside plugin:
 
 ```php
-Hook::doAction('get_plugin_rating', 'search-inside');
+Hook::doAction('wp-plugin-rating\display', 'search-inside');
 ```
 
 ## Tests 

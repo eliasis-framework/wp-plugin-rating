@@ -113,7 +113,7 @@ final class Back_End_Test extends \WP_UnitTestCase {
 		do_action( 'test_menu_page' );
 
 		$this->assertTrue(
-			Hook::isAction( 'get_plugin_rating' )
+			Hook::isAction( 'wp-plugin-rating\display' )
 		);
 	}
 
@@ -127,7 +127,7 @@ final class Back_End_Test extends \WP_UnitTestCase {
 		do_action( 'test_submenu_page' );
 
 		$this->assertTrue(
-			Hook::isAction( 'get_plugin_rating' )
+			Hook::isAction( 'wp-plugin-rating\display' )
 		);
 	}
 
@@ -170,7 +170,7 @@ final class Back_End_Test extends \WP_UnitTestCase {
 
 		ob_start();
 
-		Hook::doAction( 'get_plugin_rating', 'a-unknown-plugin' );
+		Hook::doAction( 'wp-plugin-rating\display', 'a-unknown-plugin' );
 
 		$rating = ob_get_contents();
 

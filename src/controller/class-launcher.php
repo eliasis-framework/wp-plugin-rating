@@ -59,7 +59,7 @@ class Launcher extends Controller {
 	 */
 	public function add_get_plugin_rating_action() {
 		$main = Component::WP_Plugin_Rating()->getControllerInstance( 'Main' );
-		Hook::addAction( 'get_plugin_rating', [ $main, 'get_plugin_rating' ], 8, 1 );
+		Hook::addAction( 'wp-plugin-rating\display', [ $main, 'get_plugin_rating' ], 8, 1 );
 	}
 
 	/**
