@@ -23,10 +23,10 @@ This component requires that the page where the action hook will be inserted has
 
 ---
 
-<div style="margin: 0 auto;">
+<p align="center">
     <img src="resources/screenshot-1.png" alt="">
     <img src="resources/screenshot-2.png" alt="">
-</div>
+</p>
 
 ---
 

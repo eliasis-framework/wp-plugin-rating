@@ -23,10 +23,10 @@ Este componente requiere que la página donde se insertará el gancho de acción
 
 ---
 
-<div style="margin: 0 auto;">
+<p align="center">
     <img src="resources/screenshot-1.png" alt="">
     <img src="resources/screenshot-2.png" alt="">
-</div>
+</p>
 
 ---
 
