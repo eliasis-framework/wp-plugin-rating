@@ -65,6 +65,6 @@ File::copyDirRecursively(
 );
 
 copy(
-	__DIR__ . "/../$component.jsond",
-	__DIR__ . "/$path/$component/$component.jsond"
+	__DIR__ . "/../$component.json",
+	__DIR__ . "/$path/$component/$component.json"
 );
