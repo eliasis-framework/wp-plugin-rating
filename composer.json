@@ -71,9 +71,9 @@
         ],
         "tests": [
             "clear",
+            "@phpunit",
             "@phpmd",
-            "@phpcs",
-            "@phpunit"
+            "@phpcs"
         ]
     }
 }
