@@ -21,10 +21,10 @@
          "2": "composer.json",
          "config": [
             "add-urls.php",
-            "assets",
+            "assets.php",
             "namespaces.php",
-            "paths",
-            "set-hooks",
+            "paths.php",
+            "set-hooks.php",
             "settings.php"
          ],
          "src": {
