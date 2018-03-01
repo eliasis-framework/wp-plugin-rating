@@ -24,19 +24,24 @@
             "assets.php",
             "namespaces.php",
             "paths.php",
-            "set-hooks.php",
-            "settings.php"
+            "set-hooks.php"
          ],
+         "public": {
+            "css": [
+               "wp-plugin-rating.min.css"
+            ],
+            "images": [
+               "wp-plugin-rating.png"
+            ]
+         },
          "src": {
-            "controller": {
-               "0": "class-main.php"
-            },
-            "model": {
-               "0": "class-main.php"
-            },
-            "data": {
-               "0": "plugins.jsond"
-            }
+            "controller": [
+               "class-launcher.php",
+               "class-main.php"
+            ],
+            "template": [
+               "component.php"
+            ]
          }
       }
    }
