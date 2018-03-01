@@ -49,7 +49,7 @@ class Main extends Controller {
 		if ( Plugin::exists( 'WP_Plugin_Info' ) ) {
 			$info    = Plugin::WP_Plugin_Info()->getControllerInstance( 'Main' );
 			$rating  = $info->get( 'ratings', $slug );
-			$ratings = ( $rating ) ? $rating : $ratings;
+			$ratings = ( false !== $rating ) ? $rating : $ratings;
 		}
 
 		$total = 0;

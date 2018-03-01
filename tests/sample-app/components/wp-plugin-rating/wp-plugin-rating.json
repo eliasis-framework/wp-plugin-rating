@@ -16,27 +16,32 @@
    "url-import": "https://raw.githubusercontent.com/eliasis-framework/wp-plugin-rating/master/",
    "installation-files": {
       "wp-plugin-rating": {
-         "0": "wp-plugin-rating.jsond",
+         "0": "wp-plugin-rating.json",
          "1": "LICENSE",
          "2": "composer.json",
          "config": [
             "add-urls.php",
-            "assets",
+            "assets.php",
             "namespaces.php",
-            "paths",
-            "set-hooks",
-            "settings.php"
+            "paths.php",
+            "set-hooks.php"
          ],
+         "public": {
+            "css": [
+               "wp-plugin-rating.min.css"
+            ],
+            "images": [
+               "wp-plugin-rating.png"
+            ]
+         },
          "src": {
-            "controller": {
-               "0": "class-main.php"
-            },
-            "model": {
-               "0": "class-main.php"
-            },
-            "data": {
-               "0": "plugins.jsond"
-            }
+            "controller": [
+               "class-launcher.php",
+               "class-main.php"
+            ],
+            "template": [
+               "component.php"
+            ]
          }
       }
    }
