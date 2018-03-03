@@ -23,7 +23,7 @@
     "config": {
         "preferred-install": "dist"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "support": {
         "issues": "https://github.com/eliasis-framework/wp-plugin-rating/issues",
         "forum": "http://stackoverflow.com/tags/wp-plugin-rating",
