@@ -8,9 +8,7 @@ artifacts/
 docs/_build
 docs/*.pyc
 plugins/
-.git*/
 node_modules/
-
 .idea
 .DS_STORE
 branches/
@@ -23,3 +21,6 @@ versions/
 .php_cs.cache
 grumphp.yml
 package-lock.json
+.repository.md
+.vscode/
+wp-plugin-rating.code-workspace

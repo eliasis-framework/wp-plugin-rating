@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2022-08-19
+
+* The repository was archived.
+
 ## 1.0.1 - 2018-02-25
 
 * Implemented `PHP Mess Detector` to detect inconsistencies in code styles.
@@ -42,7 +46,6 @@
 * Added `wp-plugin-rating/resources/screenshot-2.png` file.
 
 * Added `wp-plugin-rating/src/template/components/rating.php` file.
-
 
 * Added `eliasis-framework/eliasis` framework.
 

@@ -1,6 +1,7 @@
 # WP Plugin Rating · Eliasis component
 
-[![Latest Stable Version](https://poser.pugx.org/eliasis-framework/wp-plugin-rating/v/stable)](https://packagist.org/packages/eliasis-framework/wp-plugin-rating) [![Latest Unstable Version](https://poser.pugx.org/eliasis-framework/wp-plugin-rating/v/unstable)](https://packagist.org/packages/eliasis-framework/wp-plugin-rating) [![License](https://poser.pugx.org/eliasis-framework/wp-plugin-rating/license)](LICENSE) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ae4f0c7f751a449eaa616be5e38a6c2c)](https://www.codacy.com/app/Josantonius/wp-plugin-rating?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=eliasis-framework/wp-plugin-rating&amp;utm_campaign=Badge_Grade) [![Total Downloads](https://poser.pugx.org/eliasis-framework/wp-plugin-rating/downloads)](https://packagist.org/packages/eliasis-framework/wp-plugin-rating) [![Travis](https://travis-ci.org/eliasis-framework/wp-plugin-rating.svg)](https://travis-ci.org/eliasis-framework/wp-plugin-rating) [![WP](https://img.shields.io/badge/WordPress-Standar-1abc9c.svg)](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/) [![CodeCov](https://codecov.io/gh/eliasis-framework/wp-plugin-rating/branch/master/graph/badge.svg)](https://codecov.io/gh/eliasis-framework/wp-plugin-rating)
+[![Latest Stable Version](https://poser.pugx.org/eliasis-framework/wp-plugin-rating/v/stable)](https://packagist.org/packages/eliasis-framework/wp-plugin-rating)
+[![License](https://poser.pugx.org/eliasis-framework/wp-plugin-rating/license)](LICENSE)
 
 [Versión en español](README-ES.md)
 
@@ -16,10 +17,8 @@ This component requires that the page where the action hook will be inserted has
 - [Quick Start](#quick-start)
 - [Usage](#usage)
 - [Tests](#tests)
-- [TODO](#-todo)
-- [Contribute](#contribute)
+- [Sponsor](#Sponsor)
 - [License](#license)
-- [Copyright](#copyright)
 
 ---
 
@@ -40,21 +39,21 @@ The preferred way to install this component is through [Composer](http://getcomp
 
 To install **WP Plugin Rating**, simply:
 
-    $ composer require eliasis-framework/wp-plugin-rating
+    composer require eliasis-framework/wp-plugin-rating
 
 The previous command will only install the necessary files, if you prefer to **download the entire source code** you can use:
 
-    $ composer require eliasis-framework/wp-plugin-rating --prefer-source
+    composer require eliasis-framework/wp-plugin-rating --prefer-source
 
 You can also **clone the complete repository** with Git:
 
-    $ git clone https://github.com/eliasis-framework/wp-plugin-rating.git
+    git clone https://github.com/eliasis-framework/wp-plugin-rating.git
 
 ## Available Methods
 
 Available methods in this component:
 
-### - Show WordPress plugin rating:
+### - Show WordPress plugin rating
 
 ```php
 Hook::doAction('wp-plugin-rating\display', $slug);
@@ -76,70 +75,47 @@ use Josantonius\Hook\Hook;
 
 ## Usage
 
-### - Show rating of the Search Inside plugin:
+### - Show rating of the Search Inside plugin
 
 ```php
 Hook::doAction('wp-plugin-rating\display', 'search-inside');
 ```
 
-## Tests 
+## Tests
 
 To run [tests](tests) you just need [composer](http://getcomposer.org/download/) and to execute the following:
 
-    $ git clone https://github.com/eliasis-framework/wp-plugin-rating.git
+    git clone https://github.com/eliasis-framework/wp-plugin-rating.git
     
-    $ cd wp-plugin-rating
+    cd wp-plugin-rating
 
-    $ bash bin/install-wp-tests.sh wordpress_test root '' localhost latest
+    bash bin/install-wp-tests.sh wordpress_test root '' localhost latest
 
-    $ composer install
+    composer install
 
 Run unit tests with [PHPUnit](https://phpunit.de/):
 
-    $ composer phpunit
+    composer phpunit
 
 Run [WordPress](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/) code standard tests with [PHPCS](https://github.com/squizlabs/PHP_CodeSniffer):
 
-    $ composer phpcs
+    composer phpcs
 
 Run [PHP Mess Detector](https://phpmd.org/) tests to detect inconsistencies in code style:
 
-    $ composer phpmd
+    composer phpmd
 
 Run all previous tests:
 
-    $ composer tests
+    composer tests
 
-## ☑ TODO
+## Sponsor
 
-- [ ] Add new feature.
-- [ ] Improve tests.
-- [ ] Improve documentation.
-- [ ] Refactor code for disabled code style rules. See [phpmd.xml](phpmd.xml) and [.php_cs.dist](.php_cs.dist).
-
-## Contribute
-
-If you would like to help, please take a look at the list of
-[issues](https://github.com/eliasis-framework/wp-plugin-rating/issues) or the [To Do](#-todo) checklist.
-
-**Pull requests**
-
-* [Fork and clone](https://help.github.com/articles/fork-a-repo).
-* Run the command `composer install` to install the dependencies.
-  This will also install the [dev dependencies](https://getcomposer.org/doc/03-cli.md#install).
-* Run the command `composer fix` to excute code standard fixers.
-* Run the [tests](#tests).
-* Create a **branch**, **commit**, **push** and send me a
-  [pull request](https://help.github.com/articles/using-pull-requests).
+If this project helps you to reduce your development time,
+[you can sponsor me](https://github.com/josantonius#sponsor) to support my open source work :blush:
 
 ## License
 
-This project is licensed under **MIT license**. See the [LICENSE](LICENSE) file for more info.
+This repository is licensed under the [MIT License](LICENSE).
 
-## Copyright
-
-2017 - 2018 Josantonius, [josantonius.com](https://josantonius.com/)
-
-If you find it useful, let me know :wink:
-
-You can contact me on [Twitter](https://twitter.com/Josantonius) or through my [email](mailto:hello@josantonius.com).
+Copyright © 2017-2022, [Josantonius](https://github.com/josantonius#contact)

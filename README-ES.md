@@ -1,6 +1,7 @@
 # WP Plugin Rating · Eliasis component
 
-[![Latest Stable Version](https://poser.pugx.org/eliasis-framework/wp-plugin-rating/v/stable)](https://packagist.org/packages/eliasis-framework/wp-plugin-rating) [![Latest Unstable Version](https://poser.pugx.org/eliasis-framework/wp-plugin-rating/v/unstable)](https://packagist.org/packages/eliasis-framework/wp-plugin-rating) [![License](https://poser.pugx.org/eliasis-framework/wp-plugin-rating/license)](LICENSE) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ae4f0c7f751a449eaa616be5e38a6c2c)](https://www.codacy.com/app/Josantonius/wp-plugin-rating?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=eliasis-framework/wp-plugin-rating&amp;utm_campaign=Badge_Grade) [![Total Downloads](https://poser.pugx.org/eliasis-framework/wp-plugin-rating/downloads)](https://packagist.org/packages/eliasis-framework/wp-plugin-rating) [![Travis](https://travis-ci.org/eliasis-framework/wp-plugin-rating.svg)](https://travis-ci.org/eliasis-framework/wp-plugin-rating) [![WP](https://img.shields.io/badge/WordPress-Standar-1abc9c.svg)](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/) [![CodeCov](https://codecov.io/gh/eliasis-framework/wp-plugin-rating/branch/master/graph/badge.svg)](https://codecov.io/gh/eliasis-framework/wp-plugin-rating)
+[![Latest Stable Version](https://poser.pugx.org/eliasis-framework/wp-plugin-rating/v/stable)](https://packagist.org/packages/eliasis-framework/wp-plugin-rating)
+[![License](https://poser.pugx.org/eliasis-framework/wp-plugin-rating/license)](LICENSE)
 
 [Versión en español](README-ES.md)
 
@@ -16,10 +17,8 @@ Este componente requiere que la página donde se insertará el gancho de acción
 - [Cómo empezar](#cómo-empezar)
 - [Uso](#uso)
 - [Tests](#tests)
-- [Tareas pendientes](#-tareas-pendientes)
-- [Contribuir](#contribuir)
+- [Patrocinar](#patrocinar)
 - [Licencia](#licencia)
-- [Copyright](#copyright)
 
 ---
 
@@ -34,27 +33,27 @@ Este componente requiere que la página donde se insertará el gancho de acción
 
 Este componente es soportado por versiones de **PHP 5.6** o superiores y es compatible con versiones de **HHVM 3.0** o superiores.
 
-## Instalación 
+## Instalación
 
 La mejor forma de instalar este componente es a través de [Composer](http://getcomposer.org/download/).
 
 Para instalar **WP Plugin Rating**, simplemente escribe:
 
-    $ composer require eliasis-framework/wp-plugin-rating
+    composer require eliasis-framework/wp-plugin-rating
 
 El comando anterior sólo instalará los archivos necesarios, si prefieres **descargar todo el código fuente** puedes utilizar:
 
-    $ composer require eliasis-framework/wp-plugin-rating --prefer-source
+    composer require eliasis-framework/wp-plugin-rating --prefer-source
 
 También puedes **clonar el repositorio** completo con Git:
 
-    $ git clone https://github.com/eliasis-framework/wp-plugin-rating.git
+    git clone https://github.com/eliasis-framework/wp-plugin-rating.git
 
 ## Métodos disponibles
 
 Métodos disponibles en este componente:
 
-### - Mostrar calificación del plugin de WordPress:
+### - Mostrar calificación del plugin de WordPress
 
 ```php
 Hook::doAction('wp-plugin-rating\display', $slug);
@@ -76,68 +75,46 @@ use Josantonius\Hook\Hook;
 
 ## Uso
 
-### - Mostrar calificación del plugin Search Inside:
+### - Mostrar calificación del plugin Search Inside
 
 ```php
 Hook::doAction('wp-plugin-rating\display', 'search-inside');
 ```
 
-## Tests 
+## Tests
 
 Para ejecutar las [pruebas](tests) necesitarás [Composer](http://getcomposer.org/download/) y seguir los siguientes pasos:
 
-    $ git clone https://github.com/eliasis-framework/wp-plugin-rating.git
+    git clone https://github.com/eliasis-framework/wp-plugin-rating.git
     
-    $ cd wp-plugin-rating
+    cd wp-plugin-rating
 
-    $ composer install
+    composer install
 
 Ejecutar pruebas unitarias con [PHPUnit](https://phpunit.de/):
 
-    $ composer phpunit
+    composer phpunit
 
 Ejecutar pruebas de estándares de código para [WordPress](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/) con [PHPCS](https://github.com/squizlabs/PHP_CodeSniffer):
 
-    $ composer phpcs
+    composer phpcs
 
 Ejecutar pruebas con [PHP Mess Detector](https://phpmd.org/) para detectar inconsistencias en el estilo de codificación:
 
-    $ composer phpmd
+    composer phpmd
 
 Ejecutar todas las pruebas anteriores:
 
-    $ composer tests
+    composer tests
 
-## ☑ Tareas pendientes
+## Patrocinar
 
-- [ ] Añadir nueva funcionalidad.
-- [ ] Mejorar pruebas.
-- [ ] Mejorar documentación.
-- [ ] Refactorizar código para las reglas de estilo de código deshabilitadas. Ver [phpmd.xml](phpmd.xml) y [.php_cs.dist](.php_cs.dist).
-
-## Contribuir
-
-Si deseas colaborar, puedes echar un vistazo a la lista de
-[issues](https://github.com/eliasis-framework/wp-plugin-rating/issues) o [tareas pendientes](#-tareas-pendientes).
-
-**Pull requests**
-
-* [Fork and clone](https://help.github.com/articles/fork-a-repo).
-* Ejecuta el comando `composer install` para instalar dependencias.
-  Esto también instalará las [dependencias de desarrollo](https://getcomposer.org/doc/03-cli.md#install).
-* Ejecuta el comando `composer fix` para estandarizar el código.
-* Ejecuta las [pruebas](#tests).
-* Crea una nueva rama (**branch**), **commit**, **push** y envíame un
-  [pull request](https://help.github.com/articles/using-pull-requests).
+Si este proyecto te ayuda a reducir el tiempo de desarrollo,
+[puedes patrocinarme](https://github.com/josantonius/lang/es-ES/README.md#patrocinar)
+para apoyar mi trabajo :blush:
 
 ## Licencia
 
-Este proyecto está licenciado bajo **licencia MIT**. Consulta el archivo [LICENSE](LICENSE) para más información.
+Este repositorio tiene una licencia [MIT License](LICENSE).
 
-## Copyright
-
-2017 -2018 Josantonius, [josantonius.com](https://josantonius.com/)
-
-Si te ha resultado útil, házmelo saber :wink:
-
-Puedes contactarme en [Twitter](https://twitter.com/Josantonius) o a través de mi [correo electrónico](mailto:hello@josantonius.com).
+Copyright © 2017-2022, [Josantonius](https://github.com/josantonius/lang/es-ES/README.md#contacto)
